@@ -6,7 +6,7 @@ server.use(express.json());
 
 const boletos = [
     { tipo: 'Energia', valor: 300, vencimento: 20/05/2020, pago: true},
-    { tipo: 'Cartão de crédito', valor: 550.23, vencimento: 15/05/2020, pago: false} 
+    { tipo: 'Cartão de crédito', valor: 550.23, vencimento: 15/05/2020, pago: false}
 ]
 
 server.get('/boleto', function(request, response) {
