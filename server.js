@@ -20,8 +20,8 @@ server.post('/boleto', function(request, response) {
 
     const {tipo, valor, vencimento, pago} = request.body;
 
-    produtos.push({tipo, valor, vencimento, pago});
-    response.status(204).send(); 
+    boletos.push({tipo, valor, vencimento, pago});
+    response.status(204).send();
 })
 
 server.put('/boleto/:id', function(request, response) { 
